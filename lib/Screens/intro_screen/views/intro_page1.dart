@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-import '../../../logic/intro_page_controller.dart';
 import 'intro_page_card.dart';
 import 'intro_page_footer_text.dart';
 import 'intro_page_title.dart';
