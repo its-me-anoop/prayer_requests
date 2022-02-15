@@ -13,8 +13,6 @@ class IntroPage1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final IntroPageController c = Get.put(IntroPageController());
-    c.pageIndex = 0.obs;
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(32.0),
