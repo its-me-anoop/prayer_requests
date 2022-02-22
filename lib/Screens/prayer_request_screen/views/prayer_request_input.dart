@@ -26,6 +26,11 @@ class PrayerRequestInput extends StatelessWidget {
         'prayer': prayer,
         'timeadded': FieldValue.serverTimestamp(),
       }).whenComplete(() {
+        Get.snackbar(
+          prayer,
+          'Prayer request sent',
+          snackPosition: SnackPosition.TOP,
+        );
         getData();
       });
     }
