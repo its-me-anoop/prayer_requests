@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+import 'dart:math';
 
-import '../../../constants/sample_user.dart';
+import 'package:flutter/material.dart';
+import 'package:prayer_requests/constants/profile_pics.dart';
 
 class IntroPageCardHeader extends StatelessWidget {
   const IntroPageCardHeader({
@@ -13,12 +14,13 @@ class IntroPageCardHeader extends StatelessWidget {
       children: [
         CircleAvatar(
           backgroundColor: Theme.of(context).cardColor.withOpacity(0.3),
-          foregroundImage: NetworkImage(sampleProfilePic),
+          foregroundImage:
+              NetworkImage(profilePics[Random().nextInt(profilePics.length)]),
         ),
-        Expanded(
+        const Expanded(
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(sampleName),
+            padding: EdgeInsets.all(8.0),
+            child: Text("John"),
           ),
         ),
         const Icon(Icons.more_horiz)

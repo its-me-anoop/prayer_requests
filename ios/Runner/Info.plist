@@ -12,6 +12,8 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Gallery access is required to select a custom profile picture for your account</string>
 	<key>CFBundleName</key>
 	<string>prayer_requests</string>
 	<key>CFBundlePackageType</key>
@@ -41,5 +43,16 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.917404728986-rc1sg4q0ser7g62d5gbbe8bbn7bc8g7n</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

@@ -22,7 +22,8 @@ class IntroPage2 extends StatelessWidget {
             ),
             IntroPageCard(
               footerWidget: IntroPageFooterButton(),
-            )
+            ),
+            Expanded(child: SizedBox()),
           ],
         ),
       ),

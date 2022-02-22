@@ -16,11 +16,7 @@ class IntroPagesView extends StatelessWidget {
     final IntroPageController c = Get.put(IntroPageController());
     return PageView(
       onPageChanged: (index) {
-        if (index > c.pageIndex.toInt()) {
-          c.pageIncreased();
-        } else {
-          c.pageDecreased();
-        }
+        c.currentPage(index);
       },
       children: const [IntroPage1(), IntroPage2(), IntroPage3()],
     );
